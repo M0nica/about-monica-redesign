@@ -2234,7 +2234,20 @@
 		ul li {
 			padding-left: 0.5em;
 			text-align: left;
+
 		}
+
+li:before {
+			-webkit-transition: text-shadow 1s linear;
+	    -moz-transition: text-shadow 1s linear;
+	    -ms-transition: text-shadow 1s linear;
+	    -o-transition: text-shadow 1s linear;
+	    transition: text-shadow 1s linear;}
+
+ul li:before:hover,
+ul li:before.glow {
+    text-shadow: 0 0 10px yellow;
+}
 
 		ul.alt {
 			list-style: none;
@@ -2461,7 +2474,7 @@
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			/*text-align: left;*/
 		}
 
 		table thead {
@@ -3111,7 +3124,7 @@
 			font-weight: 200;
 			letter-spacing: 0.1em;
 			line-height: 2;
-			text-transform: uppercase;
+			/*text-transform: uppercase;*/
 		}
 
 		@media screen and (max-width: 1280px) {
